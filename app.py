@@ -1,6 +1,4 @@
 from pathlib import Path
-
-import pipreqs as pipreqs
 import streamlit as st
 from PIL import Image
 import requests
