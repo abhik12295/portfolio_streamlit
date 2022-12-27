@@ -4,3 +4,4 @@ pipreqs==0.4.11
 requests==2.25.1
 streamlit==1.16.0
 streamlit_lottie==0.0.3
+pip==22.3.1
