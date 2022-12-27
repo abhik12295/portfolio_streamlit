@@ -3,7 +3,6 @@ import streamlit as st
 from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
-from bokeh.models.widgets import Div
 
 # --Path Setting--
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -220,10 +219,12 @@ with st.container():
 
         if st.button('Github', key="ews_github"):
             st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/abhik12295/Map-Router-Planner')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            #js = "window.open('https://github.com/abhik12295/Map-Router-Planner')"  # New tab or window
+            # html = '<img src onerror="{}">'.format(js)
+            # div = Div(text=html)
+            # st.bokeh_chart(div)
+            link = '[Click here](https://github.com/abhik12295/Map-Router-Planner)'
+            st.markdown(link, unsafe_allow_html=True)
     with col2:
         st.image(
             "https://images.pexels.com/photos/1046398/pexels-photo-1046398.jpeg")
@@ -232,10 +233,8 @@ with st.container():
                  "official data (via REST service and JSON results).")
         if st.button('Github', key="gee_github"):
             st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/abhik12295/Civil-Advocacy')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            link = '[Click here](https://github.com/abhik12295/Civil-Advocacy)'
+            st.markdown(link, unsafe_allow_html=True)
     with col3:
         st.image(
             "https://images.pexels.com/photos/4551158/pexels-photo-4551158.jpeg")
@@ -244,10 +243,8 @@ with st.container():
         st.write("""""")
         if st.button('Github', key="ccw_github"):
             st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/abhik12295/illinois_open_cafetaria')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            link = '[Click here](https://github.com/abhik12295/illinois_open_cafetaria)'
+            st.markdown(link, unsafe_allow_html=True)
 
 with st.container():
     col4, col5, col6 = st.columns(3)
@@ -259,10 +256,8 @@ with st.container():
                  "of the models")
         if st.button('Github', key="qrc_github"):
             st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/abhik12295/COVID_TextAnalysis_Classification')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            link = '[Click here](https://github.com/abhik12295/COVID_TextAnalysis_Classification)'
+            st.markdown(link, unsafe_allow_html=True)
     with col5:
         st.image(
             "https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg")
@@ -270,17 +265,12 @@ with st.container():
         st.write("Content-based (cognitive filtering) recommendation system is to suggest an item based on a "
                  "comparison of the item's content and a user profile")
         if st.button('Enter App', key="ccw_enter"):
-            js = "window.open('https://movie-igniter.herokuapp.com/')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.write('Web Application opens in new browser tab')
-            st.bokeh_chart(div)
+            link = '[Click here](https://movie-igniter.herokuapp.com/)'
+            st.markdown(link, unsafe_allow_html=True)
         if st.button('Github', key="spw_github"):
             st.write('Github opens in new browser tab')
-            js = "window.open('https://github.com/abhik12295/movie-recommend)"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            link = '[Click here](https://github.com/abhik12295/movie-recommend)'
+            st.markdown(link, unsafe_allow_html=True)
     with col6:
         st.image(
             "https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg")
@@ -288,10 +278,9 @@ with st.container():
         st.write("Android Application in Java using Visual Crossing Web API")
         st.write("""""")
         if st.button('Github', key="bpw_github"):
-            js = "window.open('https://github.com/abhik12295/WeatherApp')"  # New tab or window
-            html = '<img src onerror="{}">'.format(js)
-            div = Div(text=html)
-            st.bokeh_chart(div)
+            st.write('Github opens in new browser tab')
+            link = '[Click here](https://github.com/abhik12295/WeatherApp)'
+            st.markdown(link, unsafe_allow_html=True)
 
 # SOCIAL network
 with st.container():
@@ -305,16 +294,15 @@ with st.container():
             "https://www.freeiconspng.com/uploads/git-github-hub-icon-25.png", width=100)
     with col1:
         st.image(
-            "https://www.freeiconspng.com/uploads/linkedin-linkedin-icon-flat-icon-linkedin-png-social-icon-png-11.png", width=100)
+            "https://www.freeiconspng.com/uploads/linkedin-linkedin-icon-flat-icon-linkedin-png-social-icon-png-11.png",
+            width=100)
     with col4:
         st.image(
             "https://www.freeiconspng.com/uploads/twitter-icon-9.png", width=100)
 
-
 cols = st.columns(len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
-
 
 # Contact me details
 with st.container():
