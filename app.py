@@ -16,7 +16,7 @@ SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/abhishek12295/",
     "GitHub": "https://github.com/abhik12295",
     "Facebook": "https://www.facebook.com/abhi120694/",
-    "Twitter": "https://www.instagram.com/abhi_1294/"
+    "Twitter": "https://twitter.com/abhi_1294"
 }
 
 st.set_page_config(
