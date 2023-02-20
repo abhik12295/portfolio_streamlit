@@ -266,9 +266,9 @@ with st.container():
         st.subheader("Movie Recommendation Content-Based Filtering")
         st.write("Content-based (cognitive filtering) recommendation system is to suggest an item based on a "
                  "comparison of the item's content and a user profile")
-        if st.button('Enter App', key="ccw_enter"):
-            link = '[Click here](https://movie-igniter.herokuapp.com/)'
-            st.markdown(link, unsafe_allow_html=True)
+        # if st.button('Enter App', key="ccw_enter"):
+        #     link = '[Click here](https://movie-igniter.herokuapp.com/)'
+        #     st.markdown(link, unsafe_allow_html=True)
         if st.button('Github', key="spw_github"):
             st.write('Github opens in new browser tab')
             link = '[Click here](https://github.com/abhik12295/movie-recommend)'
