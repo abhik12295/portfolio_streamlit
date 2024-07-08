@@ -255,113 +255,44 @@ with st.container():
             st.write('Github opens in new browser tab')
             link = '[Click here](https://github.com/abhik12295/illinois_open_cafetaria)'
             st.markdown(link, unsafe_allow_html=True)
-    import streamlit as st
 
-    # Custom CSS for aligning buttons and text size
-    st.markdown("""
-        <style>
-        .button {
-            display: flex;
-            justify-content: center;
-        }
-        .text {
-            text-align: center;
-            font-size: 20px;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-        </style>
-        """, unsafe_allow_html=True)
 
     with st.container():
         col4, col5, col6 = st.columns(3)
-
         with col4:
-            st.markdown(
-                '<div class="image-container">'
-                '   <img src="https://images.pexels.com/photos/3936358/pexels-photo-3936358.jpeg"/>'
-                '</div>',
-                unsafe_allow_html=True)
-            st.markdown('<div class="text">'
-                            '<h3>COVID Text Analysis Classification</h3>'
-                        '</div>', unsafe_allow_html=True)
-            st.markdown(
-                '<div class="text">Worked on Gaussian Naïve Bayes, Random Forest, and TF-IDF Vectorizer which affected the performance of the models</div>',
-                unsafe_allow_html=True)
+            st.image(
+                "https://images.pexels.com/photos/3936358/pexels-photo-3936358.jpeg")
+            st.subheader("COVID Text Analysis Classification")
+            st.write(
+                "Worked on Gaussian Naïve Bayes, Random Forest, and TF-IDF Vectorizer which affected the performance "
+                "of the models")
             if st.button('Github', key="qrc_github"):
-                st.write('Github opens in a new browser tab')
+                st.write('Github opens in new browser tab')
                 link = '[Click here](https://github.com/abhik12295/COVID_TextAnalysis_Classification)'
                 st.markdown(link, unsafe_allow_html=True)
-
         with col5:
-            st.markdown(
-                '<div class="image-container"><img src="https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg"/></div>',
-                unsafe_allow_html=True)
-            st.markdown('<div class="text"><h3>Movie Recommendation Content-Based Filtering</h3></div>',
-                        unsafe_allow_html=True)
-            st.markdown(
-                '<div class="text">Content-based (cognitive filtering) recommendation system is to suggest an item based on a comparison of the item\'s content and a user profile</div>',
-                unsafe_allow_html=True)
+            st.image(
+                "https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg")
+            st.subheader("Movie Recommendation Content-Based Filtering")
+            st.write("Content-based (cognitive filtering) recommendation system is to suggest an item based on a "
+                     "comparison of the item's content and a user profile")
+            # if st.button('Enter App', key="ccw_enter"):
+            #     link = '[Click here](https://movie-igniter.herokuapp.com/)'
+            #     st.markdown(link, unsafe_allow_html=True)
             if st.button('Github', key="spw_github"):
-                st.write('Github opens in a new browser tab')
+                st.write('Github opens in new browser tab')
                 link = '[Click here](https://github.com/abhik12295/movie-recommend)'
                 st.markdown(link, unsafe_allow_html=True)
-
         with col6:
-            st.markdown(
-                '<div class="image-container"><img src="https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg"/></div>',
-                unsafe_allow_html=True)
-            st.markdown('<div class="text"><h3>Weather Application</h3></div>', unsafe_allow_html=True)
-            st.markdown('<div class="text">Android Application in Java using Visual Crossing Web API</div>',
-                        unsafe_allow_html=True)
+            st.image(
+                "https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg")
+            st.subheader("Weather Application")
+            st.write("Android Application in Java using Visual Crossing Web API")
+            st.write("""""")
             if st.button('Github', key="bpw_github"):
-                st.write('Github opens in a new browser tab')
+                st.write('Github opens in new browser tab')
                 link = '[Click here](https://github.com/abhik12295/WeatherApp)'
                 st.markdown(link, unsafe_allow_html=True)
-
-    #
-    # with st.container():
-    #     col4, col5, col6 = st.columns(3)
-    #     with col4:
-    #         st.image(
-    #             "https://images.pexels.com/photos/3936358/pexels-photo-3936358.jpeg")
-    #         st.subheader("COVID Text Analysis Classification")
-    #         st.write(
-    #             "Worked on Gaussian Naïve Bayes, Random Forest, and TF-IDF Vectorizer which affected the performance "
-    #             "of the models")
-    #         if st.button('Github', key="qrc_github"):
-    #             st.write('Github opens in new browser tab')
-    #             link = '[Click here](https://github.com/abhik12295/COVID_TextAnalysis_Classification)'
-    #             st.markdown(link, unsafe_allow_html=True)
-    #     with col5:
-    #         st.image(
-    #             "https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg")
-    #         st.subheader("Movie Recommendation Content-Based Filtering")
-    #         st.write("Content-based (cognitive filtering) recommendation system is to suggest an item based on a "
-    #                  "comparison of the item's content and a user profile")
-    #         # if st.button('Enter App', key="ccw_enter"):
-    #         #     link = '[Click here](https://movie-igniter.herokuapp.com/)'
-    #         #     st.markdown(link, unsafe_allow_html=True)
-    #         if st.button('Github', key="spw_github"):
-    #             st.write('Github opens in new browser tab')
-    #             link = '[Click here](https://github.com/abhik12295/movie-recommend)'
-    #             st.markdown(link, unsafe_allow_html=True)
-    #     with col6:
-    #         st.image(
-    #             "https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg")
-    #         st.subheader("Weather Application")
-    #         st.write("Android Application in Java using Visual Crossing Web API")
-    #         st.write("""""")
-    #         if st.button('Github', key="bpw_github"):
-    #             st.write('Github opens in new browser tab')
-    #             link = '[Click here](https://github.com/abhik12295/WeatherApp)'
-    #             st.markdown(link, unsafe_allow_html=True)
 
 # --- CONTACT ---
 with st.container():
