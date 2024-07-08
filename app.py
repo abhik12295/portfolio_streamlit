@@ -367,7 +367,7 @@ with st.container():
     with col1:
         st.write(
             """
-            ABHISHEK KUMAR :copyright: 2023
+            ABHISHEK KUMAR :copyright: 2024
             """
         )
     with col2:
