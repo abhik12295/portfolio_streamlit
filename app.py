@@ -152,6 +152,15 @@ with st.container():
         st.header("Work Experience")
         st.subheader(
             """
+                💼  Kuehne & Nagel Inc. \n
+                :bookmark_tabs: BI & Data Science Developer \n 
+                :calendar: Apr 2022 - Now \n
+                :pushpin: | Data Engineering | ETL | Python | AWS Glue | Tableau | AWS |
+                 Built ETL pipelines, optimized processing time by 50% for automated report generation \n
+            """
+        )
+        st.subheader(
+            """
                 💼  CCC Intelligent Solutions \n
                 :bookmark_tabs: Automation Analyst Intern \n 
                 :calendar: Jan 2022 - Dec 2022 \n
@@ -187,15 +196,15 @@ with st.container():
         st.write(
             """
             Languages
-            - Python, JavaScript, Java
+            - Python, Spark, Javascript, Java
             Frameworks
-            - FastAPI, Django, Flask, Bootstrap, Node.js
+            - PySpark, FastAPI, Django, Flask, Bootstrap, Node.js
             Databases
             - MySQL, PostgreSQL, MongoDB
             Hosting & Cloud
             - AWS, Azure, Heroku, Streamlit Cloud
             Miscellaneous
-            - Git, Github, CI/CD, Docker, ML/AI, Tableau
+            - Git, Github, Gitlab, CI/CD, Docker, ML/AI, Tableau
              """
         )
 
