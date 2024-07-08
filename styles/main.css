@@ -57,3 +57,63 @@ form button {
 form button:hover {
     background-color: #45a049;
 }
+
+/* GitHub button style */
+button:active, .stButton>button:focus, .stButton>button:hover, .stButton>button:active {
+    background-color: #1E90FF !important;
+    color: #fff;
+    border: none;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Resume Download button */
+.stDownloadButton>button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: all 0.2s ease-in-out;
+}
+
+.stDownloadButton>button:hover {
+    background-color: #45a049;
+}
+
+.stDownloadButton>button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Better text style */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p, ul, ol {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

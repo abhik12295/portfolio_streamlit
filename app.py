@@ -77,14 +77,13 @@ with st.container():
         st.image(pro_pic, width=200)
 
     with col2:
-        pass
-        # st.write("Click Below to download the file :point_down: ")
-        # st.download_button(
-        #     label="Download Resume :page_facing_up:",
-        #     data=PDF_Byte,
-        #     file_name=resume_file.name,
-        #     mime="application/octet-stream", )
-        # st.write(":email:", EMAIL)
+        st.write("Click Below to download the file :point_down: ")
+        st.download_button(
+            label="Download Resume :page_facing_up:",
+            data=PDF_Byte,
+            file_name=resume_file.name,
+            mime="application/octet-stream", )
+        st.write(":email:", EMAIL)
 
 
 with st.container():
