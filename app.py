@@ -3,6 +3,7 @@ import streamlit as st
 from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
+import altair
 
 # --Path Setting--
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
