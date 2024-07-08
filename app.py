@@ -3,7 +3,6 @@ import streamlit as st
 from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
-import altair
 
 # --Path Setting--
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -93,7 +92,7 @@ with st.container():
         st.subheader("Hi, I am Abhishek :desktop_computer:")
         st.subheader(
             """
-            I am a *Software Developer* who specializes in the broad fields of *Automation*, *Tech* & *Data*.
+            I am a *Data Science Developer* who specializes in the broad fields of *Data*, *Tech* & *Automation*.
             """
         )
         st.write("""""")
@@ -102,7 +101,7 @@ with st.container():
             Love for 👩‍💻 :cricket_bat_and_ball: and :soccer:
             Technical leader, devise effective solutions to complex business challenges with an innate ability for 
             teamwork, task prioritization, big picture vision, and dedication. 
-            Masterfully code key projects to enable on-time delivery of key milestones within budget constraints.
+            Skillfully execute critical projects to ensure the timely delivery of key milestones within budget constraints.
             """
         )
     with col2:
@@ -155,8 +154,8 @@ with st.container():
                 💼  Kuehne & Nagel Inc. \n
                 :bookmark_tabs: BI & Data Science Developer \n 
                 :calendar: Apr 2023 - Now \n
-                :pushpin: | Data Engineering | ETL | Python | AWS Glue | Tableau | AWS |
-                 Built ETL pipelines, optimized processing time by 50% for automated report generation \n
+                :pushpin: | Data Engineering | ETL | Python | AWS Glue | Tableau | AWS \n
+                :small_red_triangle: Built ETL pipelines, optimized processing time by 50% for automated report generation \n
             """
         )
         st.subheader(
@@ -164,8 +163,8 @@ with st.container():
                 💼  CCC Intelligent Solutions \n
                 :bookmark_tabs: Automation Analyst Intern \n 
                 :calendar: Jan 2022 - Dec 2022 \n
-                :pushpin: | Automation | Data Analytics | Python | MongoDB |
-                 Built Audit Dashboard which reduced time to prepare reports by 40% \n
+                :pushpin: | Automation | Data Analytics | Python | MongoDB | \n
+                :small_red_triangle: Built Audit Dashboard which reduced time to prepare reports by 40% \n
             """
         )
         st.subheader(
@@ -173,8 +172,8 @@ with st.container():
                  💼 Must Discover Private Limited \n
                 :bookmark_tabs: Software Engineer\n
                 :calendar: Jul 2017 - Apr 2020 \n
-                :pushpin: | Software Engineer skills | Web Development | Development | Codes | AWS | Data Science |
-                Achieved 60% accuracy in targeted marketing campaigns.  \n
+                :pushpin: | Software Engineer skills | Web Development | Development | Codes | AWS | Data Science \n
+                :small_red_triangle: Achieved 60% accuracy in targeted marketing campaigns.  \n
             """
         )
         st.subheader(
@@ -182,8 +181,8 @@ with st.container():
                  💼 Nuriss LifeCare Private Limited \n
                 :bookmark_tabs: Android Developer Intern \n
                 :calendar: May 2016 - Jul 2016 \n
-                :pushpin: | Android Development | Java | RESTful API | Firebase | E-commerce |
-                Application for medical representatives and pharmacies with customized medicine inventory and orders.\n
+                :pushpin: | Android Development | Java | RESTful API | Firebase | E-commerce \n
+                :small_red_triangle: Application for medical representatives and pharmacies with customized medicine inventory and orders.\n
             """
         )
 
@@ -256,43 +255,113 @@ with st.container():
             st.write('Github opens in new browser tab')
             link = '[Click here](https://github.com/abhik12295/illinois_open_cafetaria)'
             st.markdown(link, unsafe_allow_html=True)
+    import streamlit as st
+
+    # Custom CSS for aligning buttons and text size
+    st.markdown("""
+        <style>
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+        .text {
+            text-align: center;
+            font-size: 20px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        </style>
+        """, unsafe_allow_html=True)
 
     with st.container():
         col4, col5, col6 = st.columns(3)
+
         with col4:
-            st.image(
-                "https://images.pexels.com/photos/3936358/pexels-photo-3936358.jpeg")
-            st.subheader("COVID Text Analysis Classification")
-            st.write(
-                "Worked on Gaussian Naïve Bayes, Random Forest, and TF-IDF Vectorizer which affected the performance "
-                "of the models")
+            st.markdown(
+                '<div class="image-container">'
+                '   <img src="https://images.pexels.com/photos/3936358/pexels-photo-3936358.jpeg"/>'
+                '</div>',
+                unsafe_allow_html=True)
+            st.markdown('<div class="text">'
+                            '<h3>COVID Text Analysis Classification</h3>'
+                        '</div>', unsafe_allow_html=True)
+            st.markdown(
+                '<div class="text">Worked on Gaussian Naïve Bayes, Random Forest, and TF-IDF Vectorizer which affected the performance of the models</div>',
+                unsafe_allow_html=True)
             if st.button('Github', key="qrc_github"):
-                st.write('Github opens in new browser tab')
+                st.write('Github opens in a new browser tab')
                 link = '[Click here](https://github.com/abhik12295/COVID_TextAnalysis_Classification)'
                 st.markdown(link, unsafe_allow_html=True)
+
         with col5:
-            st.image(
-                "https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg")
-            st.subheader("Movie Recommendation Content-Based Filtering")
-            st.write("Content-based (cognitive filtering) recommendation system is to suggest an item based on a "
-                     "comparison of the item's content and a user profile")
-            # if st.button('Enter App', key="ccw_enter"):
-            #     link = '[Click here](https://movie-igniter.herokuapp.com/)'
-            #     st.markdown(link, unsafe_allow_html=True)
+            st.markdown(
+                '<div class="image-container"><img src="https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg"/></div>',
+                unsafe_allow_html=True)
+            st.markdown('<div class="text"><h3>Movie Recommendation Content-Based Filtering</h3></div>',
+                        unsafe_allow_html=True)
+            st.markdown(
+                '<div class="text">Content-based (cognitive filtering) recommendation system is to suggest an item based on a comparison of the item\'s content and a user profile</div>',
+                unsafe_allow_html=True)
             if st.button('Github', key="spw_github"):
-                st.write('Github opens in new browser tab')
+                st.write('Github opens in a new browser tab')
                 link = '[Click here](https://github.com/abhik12295/movie-recommend)'
                 st.markdown(link, unsafe_allow_html=True)
+
         with col6:
-            st.image(
-                "https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg")
-            st.subheader("Weather Application")
-            st.write("Android Application in Java using Visual Crossing Web API")
-            st.write("""""")
+            st.markdown(
+                '<div class="image-container"><img src="https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg"/></div>',
+                unsafe_allow_html=True)
+            st.markdown('<div class="text"><h3>Weather Application</h3></div>', unsafe_allow_html=True)
+            st.markdown('<div class="text">Android Application in Java using Visual Crossing Web API</div>',
+                        unsafe_allow_html=True)
             if st.button('Github', key="bpw_github"):
-                st.write('Github opens in new browser tab')
+                st.write('Github opens in a new browser tab')
                 link = '[Click here](https://github.com/abhik12295/WeatherApp)'
                 st.markdown(link, unsafe_allow_html=True)
+
+    #
+    # with st.container():
+    #     col4, col5, col6 = st.columns(3)
+    #     with col4:
+    #         st.image(
+    #             "https://images.pexels.com/photos/3936358/pexels-photo-3936358.jpeg")
+    #         st.subheader("COVID Text Analysis Classification")
+    #         st.write(
+    #             "Worked on Gaussian Naïve Bayes, Random Forest, and TF-IDF Vectorizer which affected the performance "
+    #             "of the models")
+    #         if st.button('Github', key="qrc_github"):
+    #             st.write('Github opens in new browser tab')
+    #             link = '[Click here](https://github.com/abhik12295/COVID_TextAnalysis_Classification)'
+    #             st.markdown(link, unsafe_allow_html=True)
+    #     with col5:
+    #         st.image(
+    #             "https://images.pexels.com/photos/2335048/pexels-photo-2335048.jpeg")
+    #         st.subheader("Movie Recommendation Content-Based Filtering")
+    #         st.write("Content-based (cognitive filtering) recommendation system is to suggest an item based on a "
+    #                  "comparison of the item's content and a user profile")
+    #         # if st.button('Enter App', key="ccw_enter"):
+    #         #     link = '[Click here](https://movie-igniter.herokuapp.com/)'
+    #         #     st.markdown(link, unsafe_allow_html=True)
+    #         if st.button('Github', key="spw_github"):
+    #             st.write('Github opens in new browser tab')
+    #             link = '[Click here](https://github.com/abhik12295/movie-recommend)'
+    #             st.markdown(link, unsafe_allow_html=True)
+    #     with col6:
+    #         st.image(
+    #             "https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg")
+    #         st.subheader("Weather Application")
+    #         st.write("Android Application in Java using Visual Crossing Web API")
+    #         st.write("""""")
+    #         if st.button('Github', key="bpw_github"):
+    #             st.write('Github opens in new browser tab')
+    #             link = '[Click here](https://github.com/abhik12295/WeatherApp)'
+    #             st.markdown(link, unsafe_allow_html=True)
 
 # --- CONTACT ---
 with st.container():
