@@ -73,7 +73,7 @@ with st.container():
     col1, col2 = st.columns((2, 2))
 
     with col1:
-        st.image(pro_pic, width=200)
+        st.image(pro_pic, width=300)
 
     with col2:
         st.write("Click Below to download the file :point_down: ")
