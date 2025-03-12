@@ -13,7 +13,7 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 # ---General Setting ---#
 EMAIL = "abhik12295@gmail.com"
 SOCIAL_MEDIA = {
-    "LinkedIn": "https://www.linkedin.com/in/abhishek12295/",
+    "LinkedIn": "https://www.linkedin.com/in/abhi12295/",
     "GitHub": "https://github.com/abhik12295",
     "Facebook": "https://www.facebook.com/abhi120694/",
     "Twitter": "https://twitter.com/abhi_1294"
@@ -155,7 +155,9 @@ with st.container():
                 :bookmark_tabs: BI & Data Science Developer \n 
                 :calendar: Apr 2023 - Now \n
                 :pushpin: | Data Engineering | ETL | Python | AWS Glue | Tableau | AWS \n
-                :small_red_triangle: Built ETL pipelines, optimized processing time by 50% for automated report generation \n
+                :small_red_triangle: Designed geolocation tagging with AWS SageMaker, \n
+                optimized Tableau reporting and ETL pipelines for North America logistics, and \n
+                developed machine learning models for a global data mart to enhance transportation analytics. \n
             """
         )
         st.subheader(
@@ -237,13 +239,12 @@ with st.container():
             st.markdown(link, unsafe_allow_html=True)
     with col2:
         st.image(
-            "https://images.pexels.com/photos/1046398/pexels-photo-1046398.jpeg")
-        st.subheader("Civil Advocacy")
-        st.write("Android Application and Google Civic Information API will be used to acquire the government "
-                 "official data (via REST service and JSON results).")
+            "https://images.pexels.com/photos/7876785/pexels-photo-7876785.jpeg")
+        st.subheader("AI Powered PDF Reader")
+        st.write("Developed a web application for secure PDF processing, text extraction, AI summarization, and real-time chat features")
         if st.button('Github', key="gee_github"):
             st.write('Github opens in new browser tab')
-            link = '[Click here](https://github.com/abhik12295/Civil-Advocacy)'
+            link = '[Click here](https://github.com/abhik12295/AI-Powered-PDF-Reader)'
             st.markdown(link, unsafe_allow_html=True)
     with col3:
         st.image(
