@@ -155,9 +155,7 @@ with st.container():
                 :bookmark_tabs: BI & Data Science Developer \n 
                 :calendar: Apr 2023 - Now \n
                 :pushpin: | Data Engineering | ETL | Python | AWS Glue | Tableau | AWS \n
-                :small_red_triangle: Designed geolocation tagging with AWS SageMaker, \n
-                optimized Tableau reporting and ETL pipelines for North America logistics, and \n
-                developed machine learning models for a global data mart to enhance transportation analytics. \n
+                :small_red_triangle: Designed geolocation tagging with AWS SageMaker, optimized Tableau reporting and ETL pipelines for North America logistics, and developed machine learning models for a global data mart to enhance transportation analytics. \n
             """
         )
         st.subheader(
